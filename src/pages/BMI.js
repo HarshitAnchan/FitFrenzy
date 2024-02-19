@@ -1,45 +1,89 @@
-// BMI.js
-import React, { useState } from 'react';
-import { Box, Stack, Typography, TextField, Button } from '@mui/material';
+import React, {useState} from 'react'
 
-const BMI = () => {
-  const [height, setHeight] = useState('');
-  const [weight, setWeight] = useState('');
-  const [bmi, setBMI] = useState(null);
+import './index.css'
 
-  const calculateBMI = () => {
-    const heightMeters = height / 100;
-    const bmiValue = weight / (heightMeters * heightMeters);
-    setBMI(bmiValue.toFixed(2));
-  };
+function App() {
+
+  // state
+  const [weight, setWeight] = useState(0)
+  const [height, setHeight] = useState(0)
+  const [bmi, setBmi] = useState('')
+  const [message, setMessage] = useState('')
+
+
+
+  let calcBmi = (event) => {
+    //prevent submitting
+    event.preventDefault()
+
+    if (weight === 0 || height === 0) {
+      alert('Please enter a valid weight and height')
+    } else {
+      let bmi = (weight / (height * height) * 703)
+      setBmi(bmi.toFixed(1))
+
+      // Logic for message
+
+      if (bmi < 25) {
+        setMessage('You are underweight')
+      } else if (bmi >= 25 && bmi < 30) {
+        setMessage('You are a healthy weight')
+      } else {
+        setMessage('You are overweight')
+      }
+    }
+  }
+
+  //  show image based on bmi calculation
+  let imgSrc;
+
+  if (bmi < 1) {
+    imgSrc = null
+  } else {
+    if(bmi < 25) {
+      imgSrc = require('./underweight.png')
+    } else if (bmi >= 25 && bmi < 30) {
+      imgSrc = require('./healthy.png')
+    } else {
+      imgSrc = require('./overweight.png')
+    }
+  }
+
+
+  let reload = () => {
+    window.location.reload()
+  }
 
   return (
-    <Box mt="80px" px="20px" minHeight="calc(100vh - 200px)"> {/* Adjusted minHeight to push footer downwards */}
-      <Typography variant="h4" fontWeight="bold" mb="40px">Calculate Your BMI</Typography>
-      <Stack spacing={2}>
-        <TextField
-          type="number"
-          label="Height (cm)"
-          variant="outlined"
-          value={height}
-          onChange={(e) => setHeight(e.target.value)}
-        />
-        <TextField
-          type="number"
-          label="Weight (kg)"
-          variant="outlined"
-          value={weight}
-          onChange={(e) => setWeight(e.target.value)}
-        />
-        <Button variant="contained" color="primary" onClick={calculateBMI}>Calculate BMI</Button>
-      </Stack>
-      {bmi && (
-        <Typography variant="h5" fontWeight="bold" mt="20px">
-          Your BMI is: {bmi}
-        </Typography>
-      )}
-    </Box>
-  );
-};
+    <div className="app">
+      <div className='container'>
+        <h2 className='center'>BMI Calculator</h2>
+        <form onSubmit={calcBmi}>
+          <div>
+            <label>Weight (lbs)</label>
+            <input value={weight} onChange={(e) => setWeight(e.target.value)} />
+          </div>
+          <div>
+            <label>Height (in)</label>
+            <input value={height} onChange={(event) => setHeight(event.target.value)} />
+          </div>
+          <div>
+            <button className='btn' type='submit'>Submit</button>
+            <button className='btn btn-outline' onClick={reload} type='submit'>Reload</button>
+          </div>
+        </form>
 
-export default BMI;
+        <div className='center'>
+          <h3>Your BMI is: {bmi}</h3>
+          <p>{message}</p>
+        </div>
+
+        <div className='img-container'>
+          <img src={imgSrc} alt=''></img>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
