@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.css';
+import '../index.css';
 
 function App() {
   const [weight, setWeight] = useState(0);
@@ -36,11 +36,11 @@ function App() {
   let imgSrc = null;
   if (bmi > 0) {
     if (bmi < 25) {
-      imgSrc = require('./underweight.png');
+      imgSrc = require('../assets/images/underweight.png');
     } else if (bmi >= 25 && bmi < 30) {
-      imgSrc = require('./healthy.png');
+      imgSrc = require('../assets/images/healthy.png');
     } else {
-      imgSrc = require('./overweight.png');
+      imgSrc = require('../assets/images/overweight.png');
     }
   }
 
