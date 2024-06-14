@@ -13,8 +13,6 @@ BMI Calculator
 ![image](https://github.com/HarshitAnchan/FitFrenzy/assets/88927163/649e309b-17b5-4ec8-be04-b185492fe753)
 ![image](https://github.com/HarshitAnchan/FitFrenzy/assets/88927163/3e441ce7-5f28-458d-9776-238a52992df7)
 
-Creating a comprehensive README file is crucial for your project, especially to provide clear instructions and information for anyone who wants to use or contribute to your React 18 Fitness Exercises App. Below is a structured outline you can use:
-
 ---
 
 # Fitness Exercises App with React 18
@@ -70,7 +68,7 @@ To get a local copy up and running follow these simple steps.
 2. Open your browser and navigate to `http://localhost:3000` to view the app
 
 ## Contact
-Your Name - [@twitter_handle](https://x.com/HarshitAnchan02) 
+Twitter - (https://x.com/HarshitAnchan02) 
 
 Project Link: (https://github.com/HarshitAnchan/FitFrenzy)
 
