@@ -15,7 +15,7 @@ BMI Calculator
 
 ---
 
-# Fitness Exercises App with React 18
+# FitFrenzy 
 
 ## Overview
 This project is a Fitness Exercises App developed using React 18. It integrates ExerciseDB API for exercise data retrieval, muscle-specific GIF videos, and includes a BMI calculator. Users can browse over 1,000 exercises categorized by type and muscle group, and view related videos from YouTube.
