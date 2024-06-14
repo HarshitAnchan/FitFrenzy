@@ -70,9 +70,9 @@ To get a local copy up and running follow these simple steps.
 2. Open your browser and navigate to `http://localhost:3000` to view the app
 
 ## Contact
-Your Name - [@twitter_handle](https://x.com/HarshitAnchan02) - email@example.com
+Your Name - [@twitter_handle](https://x.com/HarshitAnchan02) 
 
-Project Link: [https://github.com/your_username/your_project_name](https://github.com/HarshitAnchan/FitFrenzy)
+Project Link: (https://github.com/HarshitAnchan/FitFrenzy)
 
 
 
