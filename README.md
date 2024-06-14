@@ -43,12 +43,11 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 - Node.js installed on your local machine
 - RapidAPI key for ExerciseDB API (insert instructions on how to obtain if necessary)
-- YouTube API key (insert instructions on how to obtain if necessary)
 
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/your_project_name.git
+   git clone https://github.com/HarshitAnchan/FitFrenzy.git
    ```
 2. Install NPM packages
    ```sh
@@ -59,8 +58,8 @@ To get a local copy up and running follow these simple steps.
 1. Create a `.env` file in the root directory
 2. Add your API keys to the `.env` file
    ```plaintext
-   REACT_APP_EXERCISEDB_API_KEY=your_exercisedb_api_key_here
-   REACT_APP_YOUTUBE_API_KEY=your_youtube_api_key_here
+   REACT_APP_RAPID_API_KEY= "Your Api Key (ExerciseDB api)"
+   ESLINT_NO_DEV_ERRORS = true 
    ```
 
 ### Usage
@@ -70,22 +69,10 @@ To get a local copy up and running follow these simple steps.
    ```
 2. Open your browser and navigate to `http://localhost:3000` to view the app
 
-## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Contact
-Your Name - [@twitter_handle](https://twitter.com/your_twitter_handle) - email@example.com
+Your Name - [@twitter_handle](https://x.com/HarshitAnchan02) - email@example.com
 
-Project Link: [https://github.com/your_username/your_project_name](https://github.com/your_username/your_project_name)
+Project Link: [https://github.com/your_username/your_project_name](https://github.com/HarshitAnchan/FitFrenzy)
 
 
 
