@@ -19,6 +19,7 @@ const Navbar = () => (
     >
       <Link to="/" style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #474F7A' }}>Home</Link>
       <Link to="/bmi" style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #474F7A' }}>BMI</Link> {/* Updated Link */}
+
       <a href="#exercises" style={{ textDecoration: 'none', color: '#3A1212' }}>Exercises</a>
     </Stack>
   </Stack>
